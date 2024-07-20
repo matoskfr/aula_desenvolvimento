@@ -1,0 +1,120 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#cabecalho-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: lavender;
+    background-color: black;
+    height: auto;
+    position: sticky;
+    top: 0;
+}
+
+#cabecalho-principal img {
+    margin-left: 10px;
+    height: 50px;
+}
+
+#cabecalho-principal nav {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+#cabecalho-principal a {
+    flex-shrink: 1;
+    cursor: pointer;
+    padding: 4px;
+    text-decoration: none;
+    color: #9dff8e;
+    border-style: solid;
+    border-color: #484b47;
+    border-width: 1px;
+    margin: 2px;
+}
+
+#cabecalho-principal a:hoover {
+    border-color: #d6d6d6;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 100%;
+    overflow-x: auto;
+    background-color: rgb(238, 238, 238);
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.container_mapa {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#introducao_disciplina {
+    text-align: justify;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+#topicos_abordados {
+    width: 10%;
+}
+
+#referencias {
+    width: 30%;
+}
+
+#rodape_principal {
+    position: sticky;
+    bottom: 0;
+    border-style: solid;
+    background-color: #3a013f;
+    border: #9f8eff;
+    padding: 3px;
+}
+
+#rodape_principal address {
+    font-family: monospace;
+    font-size: large;
+    color: #9dff9e;
+    text-align: center;
+    padding: 3px;
+}
+
+#rodape_principal address a {
+    color: #bdbebd;
+}
+
+#mapa1,
+#mapa2,
+#mapa3 {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #249200;
+}
